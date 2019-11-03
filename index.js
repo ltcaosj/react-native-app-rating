@@ -1,5 +1,1 @@
-import { NativeModules } from 'react-native';
-
-const { LKAppRating } = NativeModules;
-
-export { LKAppRating };
+export { LKAppRating, startAppRating } from "./app-rating";
