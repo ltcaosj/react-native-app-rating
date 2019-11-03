@@ -2,7 +2,7 @@ import { NativeModules } from "react-native";
 
 const { LKAppRating } = NativeModules;
 
-const startAppRating = ({ appleId, playStoreAppId }) => {
+const startAppRating = ({ appleStoreId, playStoreAppId }) => {
   LKAppRating.rate(playStoreAppId);
 };
 
