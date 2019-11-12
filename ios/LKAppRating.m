@@ -9,6 +9,9 @@ RCT_EXTERN_METHOD(
                   rate:(NSString *)appleAppId
                   )
 RCT_EXTERN_METHOD(
+                openAppStore:(NSString *)appleAppId
+)
+RCT_EXTERN_METHOD(
                   writeReview:(NSString *)appleAppId
                   )
 @end

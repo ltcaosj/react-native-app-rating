@@ -25,4 +25,9 @@ public class LKAppRatingModule extends ReactContextBaseJavaModule {
     public void rate(String applicationId) {
         this.reactContext.getCurrentActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + applicationId)));
     }
+
+    @ReactMethod
+    public void openAppStore(String applicationId) {
+        this.reactContext.getCurrentActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + applicationId)));
+    }
 }

@@ -48,6 +48,19 @@ class LKAppRating: RCTEventEmitter {
       })
     }
   }
+    
+  @objc func openAppStore(_ appleAppId : String){
+      self.runOnMainThread({ () -> Void in
+        let url  = NSURL(string: "itms-apps://itunes.apple.com/app/id\(appleAppId)")
+        if UIApplication.shared.canOpenURL(url! as URL) == true  {
+          if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url! as URL)
+          } else {
+            UIApplication.shared.openURL(url! as URL)
+          }
+        }
+      })
+   }
   
   @objc func writeReview(_ appleAppId : String){
     if #available(iOS 10.3, *) {

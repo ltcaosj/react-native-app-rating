@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED6D747237A9EA200D14A24 /* LKAppRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6D746237A9EA200D14A24 /* LKAppRating.m */; };
 		5EEB732A236EBA0600F3F8B2 /* LKAppRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB7329236EBA0600F3F8B2 /* LKAppRating.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libLKAppRating.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLKAppRating.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED6D746237A9EA200D14A24 /* LKAppRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAppRating.m; sourceTree = "<group>"; };
 		5EEB7326236EB9A900F3F8B2 /* LKAppRating-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKAppRating-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EEB7329236EBA0600F3F8B2 /* LKAppRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppRating.swift; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* LKAppRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAppRating.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				5EEB7329236EBA0600F3F8B2 /* LKAppRating.swift */,
-				B3E7B5881CC2AC0600A0062D /* LKAppRating.h */,
+				5ED6D746237A9EA200D14A24 /* LKAppRating.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				5EEB7326236EB9A900F3F8B2 /* LKAppRating-Bridging-Header.h */,
 			);
@@ -117,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEB732A236EBA0600F3F8B2 /* LKAppRating.swift in Sources */,
+				5ED6D747237A9EA200D14A24 /* LKAppRating.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

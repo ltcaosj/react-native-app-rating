@@ -1,9 +1,13 @@
-import { NativeModules } from "react-native";
+import {NativeModules} from 'react-native';
 
-const { LKAppRating } = NativeModules;
+const {LKAppRating} = NativeModules;
 
-const startAppRating = ({ appleStoreId, playStoreAppId }) => {
+const startAppRating = ({appleStoreId, playStoreAppId}) => {
   LKAppRating.rate(appleStoreId);
 };
 
-export { LKAppRating, startAppRating };
+const openAppStore = ({appleStoreId, playStoreAppId}) => {
+  LKAppRating.openAppStore(appleStoreId);
+};
+
+export {LKAppRating, startAppRating, openAppStore};
