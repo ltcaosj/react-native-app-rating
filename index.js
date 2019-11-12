@@ -1,1 +1,1 @@
-export { LKAppRating, startAppRating } from "./app-rating";
+export { LKAppRating, startAppRating, openAppStore } from "./app-rating";
