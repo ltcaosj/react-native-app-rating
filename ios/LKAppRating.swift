@@ -63,12 +63,7 @@ class LKAppRating: RCTEventEmitter {
    }
   
   @objc func writeReview(_ appleAppId : String){
-    if #available(iOS 10.3, *) {
-      self.runOnMainThread {
-        SKStoreReviewController.requestReview()
-      }
-    } else {
-      self.runOnMainThread({ () -> Void in
+    self.runOnMainThread({ () -> Void in
         let url  = NSURL(string: "itms-apps://itunes.apple.com/app/id\(appleAppId)?action=write-review")
         if UIApplication.shared.canOpenURL(url! as URL) == true  {
           if #available(iOS 10.0, *) {
@@ -77,8 +72,7 @@ class LKAppRating: RCTEventEmitter {
             UIApplication.shared.openURL(url! as URL)
           }
         }
-      })
-    }
+    })
   }
   
 }

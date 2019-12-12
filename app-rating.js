@@ -10,4 +10,8 @@ const openAppStore = ({appleStoreId, playStoreAppId}) => {
   LKAppRating.openAppStore(playStoreAppId);
 };
 
-export {LKAppRating, startAppRating, openAppStore};
+const writeReview = ({appleStoreId, playStoreAppId}) => {
+  LKAppRating.writeReview(appleStoreId);
+};
+
+export {LKAppRating, startAppRating, openAppStore, writeReview};
