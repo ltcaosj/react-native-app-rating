@@ -1,17 +1,17 @@
-import {NativeModules} from 'react-native';
+import {NativeModules, Linking} from 'react-native';
 
 const {LKAppRating} = NativeModules;
 
 const startAppRating = ({appleStoreId, playStoreAppId}) => {
-  LKAppRating.rate(playStoreAppId);
+  Linking.openURL(`market://details?id=${playStoreAppId}`)
 };
 
 const openAppStore = ({appleStoreId, playStoreAppId}) => {
-  LKAppRating.openAppStore(playStoreAppId);
+  Linking.openURL(`market://details?id=${playStoreAppId}`)
 };
 
-const writeReview = ({appleStoreId, playStoreAppId}) => {
-  LKAppRating.writeReview(appleStoreId);
+const writeReview = ({appleStoreId, playStoreAppId}) => {  
+  Linking.openURL(`market://details?id=${playStoreAppId}`)
 };
 
 export {LKAppRating, startAppRating, openAppStore, writeReview};

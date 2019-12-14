@@ -1,7 +1,7 @@
 {
   "name": "@react-native-lightkits/app-rating",
   "title": "React Native App Rating",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Start app rating in Apple Store or Google Play",
   "main": "index.js",
   "scripts": {
